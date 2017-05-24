@@ -37,6 +37,7 @@
         <h1>지금까지 들어온 질문들</h1>
 
  <% @qs.each do |q| %>
+ <p><h3><b><%= q.name %></b> : <%=q.content %></h3></p>
 
  <p><a href = "/edit/<%=q.id%>">수정</a> | <a href="/delete/<%=q.id%>">삭제</a></p>
      <% q.comments.each do |c| %>
