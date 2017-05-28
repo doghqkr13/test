@@ -1,57 +1,24 @@
+<link href='http://fonts.googleapis.com/earlyaccess/hanna.css'>
 
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Bootstrap Core CSS -->
-    <link href="app/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="app/assets/stylesheets/stylish-portfolio.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/application.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/comments.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/questions.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
-    <!-- Custom Fonts -->
-    <link href="app/assets/stylesheet/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-
-</head>
-
-
-    <!-- Header -->
-    <header id="top" class="header" width:500px style="font-family: 'Hanna', serif">
-        <div class="text-vertical-center" style="background-color:#FFD9EC">
-            <h1 style="font-family: 'fontawesome-webfont.woff', sans-serif;font-size:40px">궁금한게 있나요?</h1>
-            <h1 style="font-family: 'Hanna', sans-serif;font-size:70px">살짝쿵 써주세요</h1>
+    <header id="top" class="header" style="background-image:url('bg.jpg') ; font-family:Hanna">
+        <div class="text-vertical-center">
+            <h1 style="font-family:Hanna">궁금한게 있나요?</h1>
             <h3><form action="questions/create" method="post"><input type='text'name='input_name' placeholder="이름"class='form-control' style="width:700px ; margin:auto"><br>
-                <input type='text'name='input_content'placeholder='살짝이라기엔 너무 긴 빈칸' class='form-control input-lg' style="width:200px ; margin:auto ; width:700px ; height:400px"><br><input type='submit'value='질문하기!' style="width:100px; height:80px ; size:30px"class="btn btn-default"></form></h3>
+            <textarea type='text' name='input_content' placeholder='내용을 입력해주세요' class="form-control" style="width:700px; margin:auto"></textarea>
+            <br><input type='submit'value='질문하기!' style="width:100px; height:80px ; size:30px ; background-color:blue ; color:white"class="btn btn-default"></form></h3>
+            <br>
         </div>
     </header>
-    
-     <section id="about" class="about">
-        <div class="container" style="background:url('bg.jpg') ; font-family: 'Hanna', sans-serif;">
+    <!-- About -->
+    <section id="about" class="about" style="font-family:Hanna">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>성공회대학교 멋쟁이 사자처럼 5기</h2>
-                    <p class="lead" style="font-family: 'Hanna', serif">정보통신공학과 김혜린 <a target="_blank" href="http://join.deathtothestockphoto.com/">짱짱맨</a>.</p>
+                    <h2>성공회대학교 멋쟁이사자처럼 김혜린</h2>
+                    <p class="lead">궁금한점 입력 & 결과 페이지</p>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
-
-
-
-    
-
-

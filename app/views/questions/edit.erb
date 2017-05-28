@@ -1,60 +1,26 @@
+
+<link href='http://fonts.googleapis.com/earlyaccess/hanna.css'>
+
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Bootstrap Core CSS -->
-    <link href="app/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="app/assets/stylesheets/stylish-portfolio.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/application.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/comments.css" rel="stylesheet">
-    <link href="app/assets/stylesheets/questions.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="app/assets/stylesheet/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-
-</head>
-
-
     <!-- Header -->
-    <header id="top" class="header" width:500px>
-        <div class="text-vertical-center" style="background-color:#1DDB16">
-            <h1 style="font-family: 'Hanna', sans-serif;font-size:30px">질문을 수정합시다</h1>
-            <h1 style="font-family: 'Hanna', sans-serif;">꼼꼼히 확인하세요!</h1>
-            
-            
-                            
+    <header id="top" class="header" style="background-color:black ;color:yellow; font-family:Hanna">
+        <div class="text-vertical-center">
+            <h1 style="font-family:Hanna">질문을 수정합시다</h1>
             <h3> <form action="/update/<%=@question.id%>"style='width:700px ; margin:auto' method='post'><input type='text'name='input_name' placeholder="이름" class='form-control' value=<%=@question.name%>><br>
-                <input type='text'name='input_content'  style='width:200px ; margin:auto ; width:700px ; height:400px' class='form-control input-lg'  placeholder='살짝이라기엔 너무 긴 빈칸' value=<%=@question.content%>><br>
-                <input type='submit'value='다시 질문하기!' style="width:150px; height:80px ; size:30px"class="btn btn-default"></form></h3>
+                <textarea type='text'name='input_content'  style='width:200px ; margin:auto ; width:700px ; height:400px' class='form-control'  placeholder='살짝이라기엔 너무 긴 빈칸' value=<%=@question.content%>></textarea><br>
+                <input type='submit'value='수정' style="width:150px; height:80px ; size:30px; font-size:50px;background-color:yellow"class="btn btn-default"></form></h3>
+        
         </div>
     </header>
-    
-     <section id="about" class="about">
-        <div class="container" style="background:url('bg.jpg') ; font-family: 'Hanna', sans-serif;">
+    <!-- About -->
+    <section id="about" class="about" style="font-family:Hanna">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>성공회대학교 멋쟁이 사자처럼 5기</h2>
-                    <p class="lead">정보통신공학과 김혜린 <a target="_blank" href="http://join.deathtothestockphoto.com/">짱짱맨</a>.</p>
+                    <h2>성공회대학교 멋쟁이사자처럼 김혜린</h2>
+                    <p class="lead">궁금한점 수정 페이지</p>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
-
-
-
-    
-
-
